@@ -166,7 +166,7 @@ for (let item of liList) {
         const active = activeClassPage[0];
         const sibling = activeClassPage[0].previousElementSibling;
 
-        console.log(active, sibling);
+     
 
         sibling.classList.add("active");
 
