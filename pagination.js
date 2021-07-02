@@ -25,12 +25,7 @@ const setElementAttribute = (elementType, attributeType, attributeValue) => {
   elementType.setAttribute(attributeType, attributeValue);
 };
 
-for (let item of pageLinks) {
-  item.addEventListener("click", (event) => {
-    console.log("clicked");
-    console.log(event);
-  });
-}
+
 
 const fetchJSONData = function (page, active) {
   let req = new XMLHttpRequest();
@@ -177,7 +172,7 @@ for (let item of liList) {
 
         active.classList.remove("active");
         fetchJSONData(page, activePage);
-        console.log("previousdebug", page, activePage);
+        
         setPrevious(page);
         setNext(page);
       }
