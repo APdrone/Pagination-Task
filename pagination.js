@@ -147,10 +147,10 @@ for (let item of liList) {
     let activePage = activeClassPage[0].outerText;
     const previousBtn = document.getElementById("previous");
     const nextBtn = document.getElementById("next");
-    console.log(page, activePage);
+   
     if (page !== activePage) {
       if (!(page.includes("Next") || page.includes("Previous"))) {
-        // console.log("includes(['next', 'previous']");
+       
         setPrevious(Number(page));
         setNext(Number(page));
         activeClassPage[0].classList.remove("active");
@@ -192,10 +192,8 @@ for (let item of liList) {
 
       function setNext(page) {
         if (page !== 10) {
-          console.log("if next", typeof page, page);
           nextBtn.classList.remove("disabled");
-        } else if (page === 10) {
-          console.log("else next", typeof page, page);
+        } else if (page === 10) { 
           nextBtn.classList.add("disabled");
         }
       }
