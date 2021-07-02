@@ -151,6 +151,8 @@ for (let item of liList) {
     if (page !== activePage) {
       if (!(page.includes("Next") || page.includes("Previous"))) {
         // console.log("includes(['next', 'previous']");
+        setPrevious(Number(page));
+        setNext(Number(page));
         activeClassPage[0].classList.remove("active");
         event.target.parentElement.classList.add("active");
         fetchJSONData(page, activePage);
