@@ -77,7 +77,7 @@ const table = createElementWithAttribute("table", "class", "table");
 
 
 
-const thead = createElementWithAttribute("thead", "class", "thead-dark");
+const thead = createElementWithAttribute("thead", "class", "thead-light");
 
 const thr1 = createElement("tr");
 
