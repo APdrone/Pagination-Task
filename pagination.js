@@ -69,10 +69,11 @@ const fetchJSONData = function (page, active) {
 
 
 const table = createElementWithAttribute("table", "class", "table");
+table.classList.add("table-striped");
+table.style.color = "#3295FF";
 
 
-
-const thead = createElementWithAttribute("thead", "class", "thead-light");
+const thead = createElementWithAttribute("thead", "class", "thead-dark");
 
 const thr1 = createElement("tr");
 
